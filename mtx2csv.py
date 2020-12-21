@@ -62,7 +62,7 @@ def main(args):
     expression_matrix.to_csv(args.opath)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Prepare the marker matrix from single cell data')
+    parser = argparse.ArgumentParser(description='Convert mtx matrix into csv format')
 
     set_parser(parser)
 
