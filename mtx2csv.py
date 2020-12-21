@@ -56,7 +56,7 @@ def main(args):
     expression_matrix = expression_matrix.X.todense()
     # expression matrix annotated by barcodes and features
     expression_matrix = pd.DataFrame(data=expression_matrix, 
-                                     index=features['name'].values, 
+                                     index=features['ID'].values, 
                                      columns=barcodes.values[:, 0])
 
     expression_matrix.to_csv(args.opath)
